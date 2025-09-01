@@ -1,0 +1,190 @@
+@import "tailwindcss";
+
+@theme{
+  --color-primary:#88b98e;
+  --color-lightgreen:#bad2bb;
+}
+
+body{
+  font-family: "Quicksand", sans-serif;
+}
+.font-rhesmanisa {
+  font-family: 'rhesmanisaregular';
+  font-weight: normal;
+  font-style: normal;
+
+}
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.quicksand.medium{
+  font-weight: 600;
+}
+.quicksand.bold{
+  font-weight: 700;
+}
+.quicksand-regular{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.quicksand-bold{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.raleway.bold {
+  font-weight:700;
+}
+.raleway.semibold {
+  font-weight:600;
+}
+.site-logo-wrapper{
+  @apply w-[160px] h-[100px] relative mt-[-55px];
+}
+.site-logo{
+  @apply w-[153px] h-[152px] m-auto;
+  background-image:url("/images/site-logo.png");
+  background-repeat:no-repeat;
+  background-size:100%;
+
+}
+
+.nav-wrapper nav{
+  @apply border-b-2 border-solid border-b-[#fff]/20;
+  width:calc((100% - 160px)/2);
+  margin-bottom:10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  padding-bottom:4px;
+}
+.nav-wrapper nav a{
+  position:relative;
+  line-height:20px;
+  padding: 4px 10px 0;
+  border-radius: 20px;
+  z-index: 1;
+}
+.nav-wrapper nav a:hover,
+.nav-wrapper nav a.active{
+  color:var(--color-primary); 
+  border-radius: 20px;
+  overflow:hidden;
+}
+.nav-wrapper nav a:after{
+  content:"";
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background:#fff;
+  border-radius: 20px;
+  overflow:hidden;
+  z-index: -1;
+  transform:scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-wrapper nav a:hover::after,
+.nav-wrapper nav a.active:after{
+  transform:scaleX(1);
+}
+.dish-pattern-1{
+  background-image:url("/images/icons/curve-bottom-top.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.dish-pattern-sm{
+  background-image:url("/images/icons/curve-bottom-sm.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto; 
+}
+    .flip-y180 {
+      transform: rotateY(180deg) rotateX(0deg);
+      
+    }
+    .flip-y80-x180 {
+      transform: rotateY(180deg) rotateX(180deg);
+      
+    }
+    .icon1-rotate-dish{
+      /*transform: rotate(-13deg);*/
+    }
+    .icon2-rotate-dish{
+      transform: rotate(7deg);
+    }
+    .icon3-rotate-dish{
+      transform: rotate(-36deg);
+    }
+
+.leef{
+  background-image:url("/images/icons/leef-1.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.leef.lf-pattern-1{
+  background-image:url("/images/icons/leef-1.png");
+}
+.leef.lf-double-top{
+  background-image:url("/images/icons/leef-double-top.png");
+}
+.leef.lf-sigle-top-1{
+  background-image:url("/images/icons/leef-2.png");
+}
+.leef.lf-sigle-bottom-1{
+  background-image:url("/images/icons/leef-3.png");
+}
+.leef.lf-double{
+  background-image:url("/images/icons/leef-double.png");
+}
+.leef.lf-pattern-4{
+  background-image:url("/images/icons/leef-4.png");
+}
+
+/* dish section */
+.dish-pattern{
+  @apply absolute;
+  background-image:url("/images/icons/dish-pattern-2.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.pattern-top-2{
+  @apply w-[313px] h-[511px] top-[-127px] left-[-112px];
+}
+.pattern-bottom-2{
+  background-image:url("/images/icons/dish-pattern-3.png");
+  @apply w-[302px] h-[352px] bottom-[-161px] right-[-58px];
+}
+.dish-intro h3{
+  font-weight: 600;
+}
+.button{
+  @apply bg-[#fff]/30  px-5 py-2 mt-6 text-white cursor-pointer;
+}
+.bg-green.button{
+  @apply bg-[var(--color-primary)];
+}
+.image-wrapper{
+  @apply relative mb-10;
+}
+.about-sec .lf-double-top-1{
+  background-image:url("/images/icons/leef-5.png");
+}
+.about-sec .lf-double-bottom-1{
+  background-image:url("/images/icons/leef-6.png");
+}

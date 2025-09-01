@@ -1,0 +1,29 @@
+.wrapper{
+  width:100%;
+  position:relative;
+}
+.inner-wrapper{
+  width:100%;
+  margin:0 auto;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+  .inner-wrapper{
+    width:95%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .inner-wrapper{
+    width:100%;
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  .inner-wrapper{
+    width:1340px;
+  }
+}
